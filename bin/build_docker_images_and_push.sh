@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker login -e ${DOCKER_EMAIL} -u ${DOCKER_USER} -p ${DOCKER_PASS}
+docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
 
 last_commit=${CIRCLE_SHA1:0:7}
 
