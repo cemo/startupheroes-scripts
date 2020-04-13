@@ -7,6 +7,7 @@ last_commit=${CIRCLE_SHA1:0:7}
 echo "****************************************************************************"
 echo "************** Last commit =  ${last_commit} *******************************"
 echo "****************************************************************************"
+echo "APPS_FOLDER: ${APPS_FOLDER}"
 cd ${APPS_FOLDER}
 
 [[ !  -z  ${SELECTED_APPS} ]] && apps="${SELECTED_APPS[@]}" || apps="*"
